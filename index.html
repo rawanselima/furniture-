@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="furniture.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b4902719c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Furniture</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <nav aria-label="..." class="links">
+          <ul class="pagination pagination-md">
+            <li class="page-item active" aria-current="page" name="home">
+              <a class="page-link" href="#home">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+            </li>
+            <li class="page-item" name="about">
+              <a class="page-link" href="#">
+                <i class="fa-solid fa-user"></i> About</a
+              >
+            </li>
+            <li class="page-item" name="product">
+              <a class="page-link" href="#"
+                ><i class="fa-solid fa-newspaper"></i> Products</a
+              >
+            </li>
+            <li class="page-item" name="home">
+              <a class="page-link" href="#">
+                <i class="fa-solid fa-list"></i> Category</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <i class="fa-solid fa-globe"></i>Pages</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#"
+                ><i class="fa-solid fa-pen-to-square"></i> Blog</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <i class="fa-solid fa-handshake"></i> Contact</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </li>
+            <li class="page-item" name="cart">
+              <a class="page-link" href="#cart"
+                ><i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-bar">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav aria-label="..." class="links-nav-bar">
+              <ul class="pagination pagination-md">
+                <li class="page-item active" aria-current="page" name="home">
+                  <a class="page-link" href="#home">
+                    <i class="fa-solid fa-house"></i> Home</a
+                  >
+                </li>
+                <li class="page-item" name="about">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-user"></i> About</a
+                  >
+                </li>
+                <li class="page-item" name="product">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-newspaper"></i> Products</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-list"></i> Category</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-globe"></i>Pages</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-pen-to-square"></i> Blog</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-handshake"></i> Contact</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#"
+                    ><i class="fa-solid fa-heart"></i
+                  ></a>
+                </li>
+                <li class="page-item" name="cart">
+                  <a class="page-link" href="#"
+                    ><i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="popup-category">
+        <div class="furniture">
+          <p>furniture</p>
+          <ul>
+            <li><i class="fa-regular fa-circle-right"></i> Sofa</li>
+            <li><i class="fa-regular fa-circle-right"></i>Lounge</li>
+            <li><i class="fa-regular fa-circle-right"></i>Mirror</li>
+            <li><i class="fa-regular fa-circle-right"></i>Chair</li>
+            <li><i class="fa-regular fa-circle-right"></i>Lamp</li>
+          </ul>
+        </div>
+        <div class="material">
+          <p>Material</p>
+          <ul>
+            <li>Wooden & Natural</li>
+            <li>Metal & Steel</li>
+            <li>Fabrics & Textiles</li>
+            <li>MDF Industrial</li>
+            <li>Leather></li>
+          </ul>
+        </div>
+        <div class="price">
+          <p>Price Range</p>
+          <ul>
+            <li>Under $1,000</li>
+            <li>$1,000 to $5,000</li>
+            <li>$5,000 to $20,000</li>
+            <li>Above $20,000</li>
+          </ul>
+        </div>
+        <div class="brands">
+          <p>Brands</p>
+          <img src="images/asset 0.png" alt="" />
+          <img src="images/asset 1.png" alt="" />
+          <img src="images/asset 2.png" alt="" />
+          <img src="images/asset 3.png" alt="" />
+        </div>
+        <div class="offer">
+          <p>Special Offer</p>
+          <img src="images/asset 4.jpeg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="home none" id="home" name="home">
+      <div class="landing">
+        <div class="container">
+          <div class="content">
+            <p class="title">Wide Collection Of Home</p>
+            <p class="name-title">Furniture</p>
+            <p class="description">
+              Embrace a life of luxury and comfort with Xtra. Our exclusive
+              furniture collection brings sophistication and timeless elegance
+              to your home, creating spaces that resonate with your style.
+            </p>
+            <div class="images">
+              <img src="images/asset 14.jpeg" alt="" />
+              <img src="images/asset 15.jpeg" alt="" />
+              <img src="images/asset 16.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/asset 17.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="kinds-product">
+        <p class="container title">
+          Explore Our <br />
+          <span>Furniture </span> Range:
+        </p>
+        <div class="container">
+          <div class="box">
+            <img src="images/asset 18.png" alt="" />
+            <p>Sofa</p>
+          </div>
+          <div class="box">
+            <img src="images/asset 22.png" alt="" />
+            <p>Mirror</p>
+          </div>
+          <div class="box">
+            <img src="images/asset 24.png" alt="" />
+            <p>Lounge</p>
+          </div>
+          <div class="box">
+            <img src="images/asset 26.png" alt="" />
+            <p>Lamp</p>
+          </div>
+          <div class="box">
+            <img src="images/asset 27.png" alt="" />
+            <p>Other</p>
+          </div>
+        </div>
+      </div>
+      <div class="collection container">
+        <div class="image">
+          <img src="images/asset 28.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <p class="title">
+            Explore Xtra <span>Furniture Stores</span> for latest collection
+          </p>
+          <p class="data">
+            Sofa, bed, desk, chairs, tables, there’s something so enjoyable
+            about slowly meandering through furniture stores.
+          </p>
+          <div class="btn">See Collection</div>
+        </div>
+      </div>
+      <div class="unique-style container">
+        <div class="content">
+          <p class="title">
+            Styled
+            <span> Furniture</span>
+            in Unique Style
+          </p>
+          <p class="data">
+            Discover a world of comfort and style with our handcrafted furniture
+            for every room.
+          </p>
+          <div class="btn">Shop Now</div>
+        </div>
+        <div class="products">
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 11.jpeg"
+              alt=""
+              data-set="./images/asset 29.jpeg"
+              data-img="./images/asset 11.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 11.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 11.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 29.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Modern Lounge</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 33.jpeg"
+              alt=""
+              data-set="./images/asset 32.jpeg"
+              data-img="./images/asset 33.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 32.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 33.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 32.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Table</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 30.jpeg"
+              alt=""
+              data-set="./images/asset 31.jpeg"
+              data-img="./images/asset 30.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 30.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 31.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 30.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p12-600x600.jpg"
+              alt=""
+              data-set="images/p12-600x600.jpg"
+              data-img="images/p13-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p12-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p13-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p12-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offer container">
+        <div class="image">
+          <img src="images/asset 34.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <p>
+            Solution for all your Wooden <span>Furniture</span> needs collection
+          </p>
+          <div class="btn">See Collection</div>
+        </div>
+      </div>
+      <div class="brand container">
+        <p>Browse by <span>Brand</span></p>
+        <img src="images/asset 0.png" alt="" />
+        <img src="images/asset 1.png" alt="" />
+        <img src="images/asset 2.png" alt="" />
+        <img src="images/asset 3.png" alt="" />
+      </div>
+      <div class="cards container">
+        <div class="card">
+          <div class="image">
+            <img src="images/icon11.png" alt="" />
+          </div>
+          <div class="content">
+            <p class="title">FREE SHIPPING WORLDWIDE</p>
+            <p class="data">
+              We offer free shipping via Standard Shipping on orders over
+              $200.00
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="images/icon11.png" alt="" />
+          </div>
+          <div class="content">
+            <p class="title">FREE SHIPPING WORLDWIDE</p>
+            <p class="data">
+              We offer free shipping via Standard Shipping on orders over
+              $200.00
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="images/icon11.png" alt="" />
+          </div>
+          <div class="content">
+            <p class="title">FREE SHIPPING WORLDWIDE</p>
+            <p class="data">
+              We offer free shipping via Standard Shipping on orders over
+              $200.00
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart none" id="cart" name="cart">
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>SubTotal</th>
+        </tr>
+      </table>
+      <div class="checkout">
+        <p class="title">Cart Total</p>
+        <p class="total">Total : $0</p>
+        <div class="btn">Procced Check Out</div>
+      </div>
+    </div>
+    <div class="product none" name="product">
+      <div class="container">
+        <div class="products">
+          <div class="box">
+            <div class="price">
+              <p>$1,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 30.jpeg"
+              alt=""
+              data-set="./images/asset 31.jpeg"
+              data-img="./images/asset 30.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal11"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal11"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 30.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 31.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 30.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$1300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,000</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p1-600x600.jpg"
+              alt=""
+              data-set="./images/p2-600x600.jpg"
+              data-img="./images/p1-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal12"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal12"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p1-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p2-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p1-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2000</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$1,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p4-600x600.jpg"
+              alt=""
+              data-set="./images/p3-600x600.jpg"
+              data-img="./images/p4-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal13"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal13"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p3-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p4-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p3-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$1,800</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p7-600x600.jpg"
+              alt=""
+              data-set="./images/p3-600x600.jpg"
+              data-img="./images/p7-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal14"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal14"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p7-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p3-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p7-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$4,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 30.jpeg"
+              alt=""
+              data-set="./images/p8-600x600.jpg"
+              data-img="./images/asset 30.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal15"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal15"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 30.jpeg" alt="" class="active" />
+                        <img
+                          src="images/p8-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 30.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$3,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p10i-600x600.jpg"
+              alt=""
+              data-set="./images/p12-600x600.jpg"
+              data-img="./images/p10i-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal16"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal16"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p10i-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p12-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p10i-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$4300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,800</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p15-600x600.jpg"
+              alt=""
+              data-set="./images/p14-600x600.jpg"
+              data-img="./images/p15-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal17"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal17"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p15-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p14-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p15-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$4100</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p16-600x600.jpg"
+              alt=""
+              data-set="./images/p16i-600x600.jpg"
+              data-img="./images/p16-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal118"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal118"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p16-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p16i-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p16-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$3,200</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 30.jpeg"
+              alt=""
+              data-set="./images/asset 31.jpeg"
+              data-img="./images/asset 30.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal19"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal19"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p17-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p19-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p17-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$1,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p21-600x600.jpg"
+              alt=""
+              data-set="./images/asset 32.jpeg"
+              data-img="./images/p21-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal20"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal20"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p21-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/asset 32.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p21-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$1,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 10.jpeg"
+              alt=""
+              data-set="./images/asset 10.jpeg"
+              data-img="./images/asset 10.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal21"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal21"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 10.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 10.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 10.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 11.jpeg"
+              alt=""
+              data-set="./images/asset 29.jpeg"
+              data-img="./images/asset 11.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal22"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal22"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 11.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 11.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 29.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Modern Lounge</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 33.jpeg"
+              alt=""
+              data-set="./images/asset 32.jpeg"
+              data-img="./images/asset 33.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal23"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal23"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 32.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 33.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 32.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Table</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/asset 30.jpeg"
+              alt=""
+              data-set="./images/asset 31.jpeg"
+              data-img="./images/asset 30.jpeg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal24"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal24"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img src="images/asset 30.jpeg" alt="" class="active" />
+                        <img
+                          src="images/asset 31.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/asset 30.jpeg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+          <div class="box">
+            <div class="price">
+              <p>$2,400</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img
+              src="images/p12-600x600.jpg"
+              alt=""
+              data-set="images/p12-600x600.jpg"
+              data-img="images/p13-600x600.jpg"
+            />
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-shuffle"></i>
+              <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <i
+                class="fa-solid fa-magnifying-glass search-btn"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal25"
+              ></i>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal25"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-modal1"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="image">
+                        <img
+                          src="images/p12-600x600.jpg"
+                          alt=""
+                          class="active"
+                        />
+                        <img
+                          src="images/p13-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                        <img
+                          src="images/p12-600x600.jpg"
+                          alt=""
+                          class="not-active"
+                        />
+                      </div>
+                      <div class="content">
+                        <p class="title">Office Chair</p>
+                        <p class="price">$2300</p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="data">
+                          Furniture refers to movable objects intended to
+                          support various human activities such as seating,
+                          eating, and sleeping. Furniture is also used to hold
+                          objects at a convenient height for work, or to store
+                          things.
+                        </p>
+                        <div class="quantity">
+                          <span class="plus">+</span>
+                          <span class="number">1</span>
+                          <div class="span minus">-</div>
+                        </div>
+                        <div class="add-cart">
+                          <div class="btn cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart
+                          </div>
+                          <i class="fa-regular fa-heart like"></i>
+                          <i class="fa-solid fa-shuffle like"></i>
+                        </div>
+                        <div class="data-product">
+                          <ul>
+                            <li>Brand</li>
+                            <li>SKU</li>
+                            <li>Status</li>
+                            <li>Tags</li>
+                            <li>Categories</li>
+                          </ul>
+                          <ul>
+                            <li>XTRA</li>
+                            <li>SKU_1424</li>
+                            <li>95 in stock</li>
+                            <li>fabric, sofa</li>
+                            <li>Sofa</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-close-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <form action="">
+            <input type="text" name="search" placeholder="Search By Category" />
+            <div class="btn">Search</div>
+            <select>
+              <option value="lounge">Lounge</option>
+              <option value="chair">Chair</option>
+              <option value="lamp">Lamp</option>
+              <option value="clock">Clock</option>
+              <option value="table">Table</option>
+            </select>
+          </form>
+          <div class="other-products">
+            <p class="title">Other Products</p>
+            <div class="other">
+              <div class="image">
+                <img src="images/p10i-600x600.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>Modern Table</p>
+                <p>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                </p>
+                <p>$250</p>
+              </div>
+            </div>
+            <div class="other">
+              <div class="image">
+                <img src="images/p16i-600x600.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>Modern Table</p>
+                <p>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                </p>
+                <p>$250</p>
+              </div>
+            </div>
+            <div class="other">
+              <div class="image">
+                <img src="images/p19-600x600.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>Modern Table</p>
+                <p>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                </p>
+                <p>$350</p>
+              </div>
+            </div>
+            <div class="other">
+              <div class="image">
+                <img src="images/p17-600x600.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>Modern Table</p>
+                <p>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                </p>
+                <p>$550</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about none container" name="about">
+      <div class="landing">
+        <div class="content">
+          <p class="title"><span>About</span> Us</p>
+          <p class="data">
+            Furniture can be a product of design and is considered a form of
+            decorative art. In addition to furniture's functional role, it can
+            serve a symbolic or religious purpose. It can be made from many
+            materials, including metal, plastic, and wood. Furniture can be made
+            using a variety of woodworking joints which often reflect the local
+            culture. Early furniture from this period is known from artwork such
+            as a Venus figurine found in Russia, depicting the goddess on a
+            throne. The first surviving extant furniture is in the homes of
+            Skara Brae in Scotland, and includes cupboards, dressers and beds
+            all constructed from stone. Complex construction techniques such as
+            joinery began in the early dynastic period of ancient Egypt. This
+            era saw constructed wooden pieces, including stools and tables,
+            sometimes decorated with valuable metals or ivory.
+          </p>
+          <div class="list">
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Good Woods</li>
+              <li><i class="fa-solid fa-check"></i> Natural Materials</li>
+              <li><i class="fa-solid fa-check"></i> Best Fabrics</li>
+            </ul>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Good Woods</li>
+              <li><i class="fa-solid fa-check"></i> Natural Materials</li>
+              <li><i class="fa-solid fa-check"></i> Best Fabrics</li>
+            </ul>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/img4.jpg" alt="" />
+          <p>
+            <span>27</span>Years <br />
+            of Experience
+          </p>
+        </div>
+      </div>
+      <div class="history">
+        <div class="image">
+          <img src="images/img3.jpg" alt="" />
+        </div>
+        <div class="content">
+          <p class="title">Our <span>History</span></p>
+          <p>
+            People have been using natural objects, such as tree stumps, rocks
+            and moss, as furniture since the beginning of human civilization.
+            Archaeological research shows that from around 30,000 years ago,
+            people began constructing and carving their own furniture, using
+            wood, stone, and animal bones.
+          </p>
+          <div class="progress-box">
+            <p class="progress-title" data="97%">Clients Satisfaction</p>
+            <p class="ratio">0%</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                data="97%"
+              ></div>
+            </div>
+          </div>
+          <div class="progress-box">
+            <p class="progress-title" data="90%">Furniture Repairment</p>
+            <p class="ratio">0%</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                data="90%"
+              ></div>
+            </div>
+          </div>
+          <div class="progress-box">
+            <p class="progress-title" data="85%">Diamond Certificates</p>
+            <p class="ratio">0%</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                data="85%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="numbers">
+        <p class="title">Our <span>Numbers</span></p>
+        <div class="container">
+          <div class="num" data="27">
+            <p>0<span> +</span></p>
+          </div>
+          <div class="num" data="35">
+            <p>0<span> K</span></p>
+          </div>
+          <div class="num" data="46">
+            <p>0<span> +</span></p>
+          </div>
+          <div class="num" data="17">
+            <p>0<span> +</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="title">Testimonials</div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slide">
+                <img src="images/t11.jpg" alt="" />
+                <p class="name">Jenneifer Someone <span>Singer</span></p>
+                <p class="opinion">
+                  "People hove be using natural objects , such as tree stumps ,
+                  rocks ,stones as furniture since the beginning of human
+                  civilization"
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slide">
+                <img src="images/t12.jpg" alt="" />
+                <p class="name">Jenneifer Someone <span>Singer</span></p>
+                <p class="opinion">
+                  "People hove be using natural objects , such as tree stumps ,
+                  rocks ,stones as furniture since the beginning of human
+                  civilization"
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slide">
+                <img src="images/t13.jpg" alt="" />
+                <p class="name">Jenneifer Someone <span>Singer</span></p>
+                <p class="opinion">
+                  "People hove be using natural objects , such as tree stumps ,
+                  rocks ,stones as furniture since the beginning of human
+                  civilization"
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="add-success">
+      <div class="correct"><i class="fa-solid fa-check fa-2x"></i></div>
+      <div class="data">
+        <span>Office Sofa </span>added to cart successfully
+        <div class="btn">View Cart</div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="links-footer">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="links">
+          <ul>
+            <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+            <li><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+            <li><i class="fa-brands fa-linkedin fa-2x"></i></li>
+            <li>Track Your Order</li>
+            <li>FAQ</li>
+            <li>Affiliates</li>
+            <li>Privacy Policy</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="location">
+          <p>location</p>
+          <p>
+            1418 Riverland, Shop 385 <br />
+            Cotowood, CA 92022 <br />
+            United States <br />
+          </p>
+        </div>
+        <div class="location">
+          <p>Contact</p>
+          <p>
+            Tel: +1 (800) 345 678 <br />
+            Email: info @ xtrafurniture.com <br />
+            Working Hours: 10 AM to 11 PM <br />
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="furniture.js"></script>
+  </body>
+</html>
